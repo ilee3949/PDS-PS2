@@ -10,9 +10,11 @@ for(i in numbers){print(i^3)}
 #2. Write a for loop that does 1000 simulations of where two fair dice are rolled. Use the function
 #set.seed(14) so that we all have the same values when using the sample() function.
 set.seed(14)
-for(i in 1:1000)
-d <- sample(1:6,2, replace=T)
-result <- sum(d)
+for(i in 1:1000) {
+  print(results<-sum((sample(1:6,2,replace=T)))) 
+  if (results >= 8 & results <= 12 ) break }
+
+
 
 
 # Write the loop such that if the two dice total to values 8,9,10,11,12 the game ends immediately
