@@ -9,6 +9,7 @@ for(i in numbers){print(i^3)}
 
 #2. Write a for loop that does 1000 simulations of where two fair dice are rolled. Use the function
 #set.seed(14) so that we all have the same values when using the sample() function.
+set.seed(14)
 for(i in 1:1000)
 d <- sample(1:6,2, replace=T)
 result <- sum(d)
